@@ -8,7 +8,7 @@ const answer = [
     "Visticamāk",
     "Izskatās labi",
     "Jā",
-    "Zīmes norāda uz jā",
+    "Debesis norāda uz jā",
     "Atbildēt miglains, mēģiniet vēlreiz",
     "Jautā vēlreiz vēlāk",
     "Labāk jums tagad nesaki",
