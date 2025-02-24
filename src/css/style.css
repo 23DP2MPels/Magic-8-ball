@@ -1,7 +1,10 @@
 html {
     scroll-behavior:smooth;
-    
+    font-family: "Pattaya";
+    src: url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+    color: rgb(225, 225, 225);
 }
+
 
 * {
     box-sizing: border-box;
@@ -13,8 +16,18 @@ html {
 body {
     background-image:url(../img/stars_blur.gif);
     background-repeat: repeat;
-    
+}
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(36, 0, 56, 0.36);
+    padding-block: 1rem;
+    color: rgb(225, 225, 225);
 }
 
 nav {
@@ -25,13 +38,19 @@ nav {
     padding-block: 1rem;
 }
 
+.eight_ball p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-size: 1.2rem;
+}
+
 .buttons a{
     gap: 2rem;
     font: none;
     padding: 1rem 0.5rem;
     border: solid 1px rgb(0, 0, 0);
-    font-family: "Pattaya";
-    src: url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
     font-size: 1.5rem;
     text-decoration: none;
     color: rgb(90, 23, 126);
@@ -64,4 +83,11 @@ input[type=text] {
     height: 8rem;
     width: 25rem;
     text-align: center;
+}
+
+.specification {
+    color: rgb(225, 225, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
