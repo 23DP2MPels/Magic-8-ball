@@ -1,27 +1,38 @@
 const answer = [
-    "It is certain",
-    "It is decidedly so",
-    "Without a doubt",
-    "Yes, definitely",
-    "You may rely on it",
-    "As I see it, yes",
-    "Most likely",
-    "Outlook good",
-    "Yes",
-    "Signs point to yes",
-    "Reply hazy try again",
-    "Ask again later",
-    "Better not tell you now",
-    "Cannot predict now",
-    "Concentrate and ask again",
-    "Don’t count on it",
-    "My reply is no",
-    "My sources say no",
-    "Outlook not so good",
-    "Very doubtful",
-    "I see curse on you"
+    "Tas ir droši",
+    "Tas noteikti tā ir",
+    "Bez šaubām",
+    "Jā, noteikti",
+    "Jūs varat paļauties uz to",
+    "Kā es redzu, jā",
+    "Visticamāk",
+    "Izskatās labi",
+    "Jā",
+    "Zīmes norāda uz jā",
+    "Atbildēt miglains, mēģiniet vēlreiz",
+    "Jautā vēlreiz vēlāk",
+    "Labāk jums tagad nesaki",
+    "Tagad nevar paredzēt",
+    "Koncentrējieties un jautājiet vēlreiz",
+    "Neceri uz to",
+    "Mana atbilde ir nē",
+    "Mani avoti saka nē",
+    "Izredzes nav tik labas",
+    "Ļoti apšaubāmi",
+    "Es redzu uz tevis lāstu"
 ]
 
+function getRandomItem() {
+    const randomIndex = Math.floor(Math.random() * answer.length);
 
-const answer_lenght = (Math.floor(Math.random() * answer.length));
-console.log(answer_lenght)
+    // get random item
+    const item = answer[randomIndex];
+
+    document.getElementById("otvet").innerHTML = item;
+}
+
+document.getElementById("ask").addEventListener("click", getRandomItem);
+
+//const ask_button = document.getElementById("otvet"); 
+//changeButton.addEventListener("click", getRandomItem);
+//document.getElementById("otvet").innerHTML = getRandomItem;

@@ -14,43 +14,50 @@
         <nav>
             <img src="src/img/m8b.png" alt="logo" width="200rem">
             <div class="buttons" style="margin-right: 1rem;">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="login.html">Login</a>
+                <a href="#ball">8-Ball</a>
+                <a href="#specification">Uzdot jautajumu</a>
+                <a href="#Cat">Cat facts</a>
+                <a href="#footer">Author</a>
             </div>
         </nav>
     </header>
     <main>
         <div class="eight_ball">
             <div class="ball" style="color: white;">
-                <img src="src/img/8ball.png" alt="8ball" style="height: 20rem;">
+                <img src="src/img/8ball.png" alt="8ball" style="height: 20rem;" >
+                <h2 id="otvet"></h2>
             </div>
-            <div class="input">
+            <div class="input" >
                 <input type="text" id="question" placeholder="Ask a question">
-                <input type="image" src="src/img/seal.png" onclick="getAnswer()" style="height: 6rem;">
+                <input type="image" id="ask" src="src/img/seal.png" style="height: 6rem;">
             </div>
             <p>Lai atbilde būtu precizaka ievadiet jūsu zodiaka zīme</p>
             <div class="specification">
-                <form action="/submit" method="POST">
+                <form >
                     <select id="zodiac" name="zodiac" required>
-                        <option value="Овен">Овен</option>
-                        <option value="Телец">Телец</option>
-                        <option value="Близнецы">Близнецы</option>
-                        <option value="Рак">Рак</option>
-                        <option value="Лев">Лев</option>
-                        <option value="Дева">Дева</option>
-                        <option value="Весы">Весы</option>
-                        <option value="Скорпион">Скорпион</option>
-                        <option value="Стрелец">Стрелец</option>
-                        <option value="Козерог">Козерог</option>
-                        <option value="Водолей">Водолей</option>
-                        <option value="Рыбы">Рыбы</option>
+                        <option value="Aries">Auns</option>
+                        <option value="Taurus">Vērsis</option>
+                        <option value="Gemini">Dvīņi</option>
+                        <option value="Cancer">Vēzis</option>
+                        <option value="Lion">Lauva</option>
+                        <option value="Virgo">Jaunava</option>
+                        <option value="Libra">Svari</option>
+                        <option value="Scorpio">Skorpions</option>
+                        <option value="Strēlnieks">Strēlnieks</option>
+                        <option value="Capricorn">Mežāzis</option>
+                        <option value="Aquarius">Ūdensvīrs</option>
+                        <option value="Pisces">Zivis</option>
                     </select>
-                    <button type="submit">Отправить</button>
+                    <!-- <button type="submit">Aizsūtit</button>-->
                 </form>
             </div>
+            <p style="color: black;">efefef</p>
         </div>
+        <div class="Cat" style="display: flex; height: 20vh;">
+            <img src="src/img/cat.jpg" alt="cat_image" style="height: 20rem;">
+            <h2 style="font-weight: 100;">Melnie kaķi nereti ir asociēti ar raganu pavadoņiem</h3>
+        </div>
+        <img src="src/img/black.png">
     </main>
     <footer>
         &copy; Mairis Pelšs

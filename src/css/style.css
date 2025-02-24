@@ -38,6 +38,7 @@ nav {
     padding-block: 1rem;
 }
 
+
 .eight_ball p {
     display: flex;
     justify-content: center;
@@ -50,7 +51,6 @@ nav {
     gap: 2rem;
     font: none;
     padding: 1rem 0.5rem;
-    border: solid 1px rgb(0, 0, 0);
     font-size: 1.5rem;
     text-decoration: none;
     color: rgb(90, 23, 126);
@@ -62,10 +62,20 @@ nav {
 }
 
 .ball {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
+}
+
+.ball h2 {
+    position: absolute;
+   top: 200px;
+   width: 100%;
+   width: auto;
+   height: 50px;
+   font-weight: 25;
 }
 
 .input {
@@ -89,5 +99,11 @@ input[type=text] {
     color: rgb(225, 225, 225);
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.Cat{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
